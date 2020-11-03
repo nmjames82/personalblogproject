@@ -1,0 +1,52 @@
+body{
+  background-image: url(../img/stars.jpg);
+  width:80%;
+  margin:auto;
+}
+
+.wrapper{
+  display:grid;
+  grid-template-columns:repeat(3 1fr);
+  grid-template-rows:minmax(100px, auto);
+  grid-gap: .5em;
+}
+
+.nestednav a{
+  color: white;
+}
+
+.wrapper>div{
+  background-color:#6C6B74;
+  padding:1em;
+  border-radius: 10px;
+  font: 15px/1.5  Helvetica, sans-serif;
+  color:white;
+  min-height: 200px;
+  border-bottom: 10px solid #54678F;
+  opacity: .8;
+}
+
+
+.header{
+      grid-column:1/8;
+      grid-row:1/2;
+      background-image: url(../img/jupiter.jpg);
+    }
+
+    .aside{
+      grid-column:1/8;
+      grid-row:3;
+      justify-content: space-between;
+    }
+
+    .footer{
+      grid-column:1/8;
+      grid-row:4;
+      border:1px solid #333;
+    }
+
+    #comet{
+      float:left;
+      margin-right:5px;
+      margin-bottom: 5px;
+    }

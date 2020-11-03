@@ -1,0 +1,56 @@
+body{
+  background-image: url(../img/stars.jpg);
+  width:80%;
+  margin:auto;
+  color:white;
+}
+
+.wrapper{
+  display:grid;
+  grid-template-columns:(1fr 1fr 1fr);
+  grid-auto-rows:minmax(100px, auto);
+  grid-gap:.7em;
+  justify-content:center;
+  align-items:center;
+  word-wrap: break-word;
+  word-break: break-all;
+
+}
+
+.wrapper > div {
+  padding:1em;
+  border: 3px solid black;
+  border-radius: 10px;
+  font: 15px/1.5  Helvetica, sans-serif;
+  min-height: 200px;
+  border-bottom:10px solid #54678F;
+}
+
+.header{
+      grid-column: 1/8;
+      grid-row: 1/2;
+      background-image: url(../img/jupiter.jpg);
+      color: white;
+    }
+.header a{
+  color:white;
+}
+
+.bio{
+    grid-column:1/8;
+    grid-row: 2/4;
+    background-color: #6C6B74
+  }
+
+
+.social{
+      grid-column: 1/8;
+      grid-row: 6;
+      background-color: #6C6B74;
+}
+img{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+}
